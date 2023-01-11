@@ -1,0 +1,146 @@
+@media (max-width: 1200px) {
+    .promo{
+        background-position:left;
+    }
+}
+
+@media (max-width: 991px) {
+    .promo{
+        background-position:left;
+        &__wrapper {
+            align-items:center;
+        }
+    }
+
+    .header{
+        justify-content: space-around;
+    }
+
+    .consultation {
+        .container {
+            padding-left: 50px;
+        }
+    }
+    
+    .catalog {
+        &__content {    
+            justify-content: space-around!important;
+        }
+    }
+
+    .feed {
+        &__item {
+            margin-left: 70px;
+        }
+    }
+}
+
+/* 576 */
+
+@media (max-width: 767px) { 
+    .promo{
+        &__wrapper {
+            padding-top: 70px;
+        }
+        &__header {
+            font-size: 30px;
+            line-height: 6px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    }
+    .header {
+        &__logo {
+            width: 200px;
+        }
+        &__official {
+            span {
+                font-size: 16px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        .button {
+            width: 125px;
+        }
+    }
+    .advantages {
+        .container {
+            .title {
+                font-size: 25px;
+            }
+            
+        }
+
+        &__wrapper {
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+        }
+
+        &__item {
+            margin: 20px 0;
+        }
+        
+        &__descr {
+            margin-top: 10px;
+        }
+    }
+    
+    .title_left {
+        font-size: 32px;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .catalog {
+        padding-top: 50px;
+        &__tabs {
+            margin-top: 30px!important;
+            flex-direction: column;
+            li {
+                margin: 10px;
+            }
+        }
+        .catalog-item {
+            width: 400px;
+            img{
+                height: 250px;
+            }
+        }
+       
+    }
+
+    .feed {
+        &__item {
+            margin-top: 50px!important;
+            margin-left: 0;
+            flex-direction: column;
+            margin-bottom: 15px;
+            img {
+               display: block;
+               margin: 0 auto;
+               margin-bottom: 30px;
+            }
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+    
+}
+
+/* 320 */
+
+@media (max-width: 575px) {
+.footer {
+    &__info {
+        width: 320px!important;
+    }
+}
+}
+
