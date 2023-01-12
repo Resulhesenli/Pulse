@@ -29,20 +29,4 @@
             text-decoration: underline;
         }
     }
-    &__icon-heart {
-        animation: heart 1.4s infinite;
-        &:hover {
-            animation-play-state: paused;
-        }
-    }
-    &__icon-cup {
-        animation: cup 3s infinite;
-        &:hover {
-            animation-play-state: paused;
-        }
-    }
-    &__icon-foot {
-        animation: foot 2s infinite;
-    }
-
 }
