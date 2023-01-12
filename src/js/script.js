@@ -90,6 +90,45 @@ $(document).ready(function(){
 
    $("input[name=phone]").mask("+7(999) 999-99-99");
 
+   $('form').submit(function(e) {
+        e.preventDefault();
+       if(!$(this).valid()) {
+            return;
+       }
+
+       $(this).find('input').val('');
+       $('#consultation, #order').fadeOut();
+       $('.overlay, #thanks').fadeIn();
+
+        // $.ajax({
+        //     type: 'POST',
+        //     url: 'mailer/smart.php',
+        //     data: $(this).serialize()
+        // }).done(function() {
+        //     $(this).find('input').val('');
+        //     $('#consultation, #order').fadeOut();
+        //     $('.overlay, #thanks').fadeIn();
+
+        //     $('form').trigger('reset');
+        // });
+        return false;
+   });
   
+   
+   //smoot scroll and pageup
+   
+   $(window).scroll(function() {
+        if($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+
+   });
+
+   $("a[href=#up]").click(function () {
+        const _href = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(_href).offset().top+"px"});
+   });
 
 });
