@@ -90,6 +90,46 @@ $(document).ready(function(){
 
    $("input[name=phone]").mask("+7(999) 999-99-99");
 
+<<<<<<< Updated upstream
+=======
+   $('form').submit(function(e) {
+        e.preventDefault();
+       if(!$(this).valid()) {
+            return;
+       }
+
+<<<<<<< HEAD
+       $(this).find('input').val('');
+       $('#consultation, #order').fadeOut();
+       $('.overlay, #thanks').fadeIn();
+
+        // $.ajax({
+        //     type: 'POST',
+        //     url: 'mailer/smart.php',
+        //     data: $(this).serialize()
+        // }).done(function() {
+        //     $(this).find('input').val('');
+        //     $('#consultation, #order').fadeOut();
+        //     $('.overlay, #thanks').fadeIn();
+
+        //     $('form').trigger('reset');
+        // });
+=======
+        $.ajax({
+            type: 'POST',
+            url: 'mailer/smart.php',
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find('input').val('');
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+>>>>>>> main
+        return false;
+   });
+>>>>>>> Stashed changes
   
 
 });
