@@ -132,4 +132,5 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: $(_href).offset().top+"px"});
     });
 
+    new WOW().init();
 });

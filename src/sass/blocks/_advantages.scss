@@ -43,5 +43,8 @@
     }
     &__icon-foot {
         animation: foot 2s infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
     }
 }
