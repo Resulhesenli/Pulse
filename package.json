@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "bundle exec jekyll build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,8 +15,7 @@
     "gulp-cli": "^2.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.0.0",
-    "sass": "^1.35.1",
-    "jekyll": "^3.0.0-beta1"
+    "sass": "^1.35.1"
   },
   "browserslist": [
     "last 1 version",
